@@ -1,6 +1,162 @@
+/*Fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Generales */
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
+/* Header */
+
+.banner-top{
+    background-color: #1CD1B0;
+    height: 38px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.txt-banner{
+    font-size: 15px;
+    padding: 10px 0;
+    padding-left: 50px;
+}
+
+.header-top{
+    background-color: #00669F;
+    box-shadow: 0 3px 15px #000;
+    position: sticky;
+    height: 101px;
+    width: 100%;
+    top: 0;
+}
+
+.titulo-principal{
+    font-size: 40px;
+    font-weight: lighter;
+    padding: 25px 0;
+    padding-left: 50px;
+}
+
+/* Main */
+
+.noticias{
+    margin-top: 150px;
+    position: relative;
+    z-index: -1;
+}
+
+.articulo-batman{
+    background-color: #F3F3F3;
+    border-radius: 17px 17px 0 0;
+    box-shadow: 0 3px 10px #666;
+    height: 529px;
+    margin-left: 50px;
+    position: absolute;
+    width: 300px;
+}
+
+.articulo-harley{
+    background-color: #F3F3F3;
+    border-radius: 17px 17px 0 0;
+    box-shadow: 0 3px 10px #666;
+    height: 529px;
+    margin-left: 400px;
+    position: absolute;
+    width: 300px;
+}
+
+.articulo-batmancito{
+    background-color: #F3F3F3;
+    border-radius: 17px 17px 0 0;
+    box-shadow: 0 3px 10px #666;
+    height: 529px;
+    margin-left: 750px;
+    position: absolute;
+    width: 300px;
+}
+
+.mask{
+    background-image: url(../img/back_batman.png);
+    background-size: cover;
+    height: 194px;
+}
+
+.maskHarley{
+    background-image: url(../img/back_harley.png);
+    background-size: cover;
+    height: 194px;
+}
+
+.icono{
+    color: #f00;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.perfil-heroe{
+    left: 90px;
+    position: absolute;
+    right: 90px;
+    top: 125px;
+}
+
+.titulo-noticia{
+    font-size: 30px;
+    font-weight: lighter;
+    margin-top: 70px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.txt-noticia{
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.btn-articulo{
+    background-color: #00669F;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.btn-articulo:hover{
+    background-color: #36769b;
+}
+
+.btn-txt{
+    color: #fff;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+/* Footer */
+
+.pie{
+    background-color: #00669F;
+    border: 0;
+    height: 51px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.txt-final{
+    color: #FFF9F9;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 18px 0;
+    padding-left: 50px;
+}
