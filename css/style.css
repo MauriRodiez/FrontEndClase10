@@ -18,7 +18,7 @@
     height: 38px;
     width: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .txt-banner{
@@ -34,6 +34,7 @@
     height: 101px;
     width: 100%;
     top: 0;
+    z-index: 1;
 }
 
 .titulo-principal{
@@ -46,42 +47,20 @@
 /* Main */
 
 .noticias{
-    margin-top: 150px;
-    position: relative;
-    z-index: -1;
+    margin: 150PX 50PX;
 }
 
-.articulo-batman{
+.articulo-heroe{
     background-color: #F3F3F3;
     border-radius: 17px 17px 0 0;
     box-shadow: 0 3px 10px #666;
+    display: inline-block;
     height: 529px;
-    margin-left: 50px;
-    position: absolute;
+    margin: auto 10px;
     width: 300px;
 }
 
-.articulo-harley{
-    background-color: #F3F3F3;
-    border-radius: 17px 17px 0 0;
-    box-shadow: 0 3px 10px #666;
-    height: 529px;
-    margin-left: 400px;
-    position: absolute;
-    width: 300px;
-}
-
-.articulo-batmancito{
-    background-color: #F3F3F3;
-    border-radius: 17px 17px 0 0;
-    box-shadow: 0 3px 10px #666;
-    height: 529px;
-    margin-left: 750px;
-    position: absolute;
-    width: 300px;
-}
-
-.mask{
+.maskBatman{
     background-image: url(../img/back_batman.png);
     background-size: cover;
     height: 194px;
@@ -102,17 +81,18 @@
 
 .perfil-heroe{
     left: 90px;
-    position: absolute;
+    position: relative;
     right: 90px;
-    top: 125px;
+    top: -75px;
 }
 
 .titulo-noticia{
     font-size: 30px;
     font-weight: lighter;
-    margin-top: 70px;
+    margin-top: -70px;
     text-align: center;
     text-transform: uppercase;
+    position: relative;
 }
 
 .txt-noticia{
@@ -148,7 +128,7 @@
     background-color: #00669F;
     border: 0;
     height: 51px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
