@@ -104,21 +104,17 @@
 
 .btn-articulo{
     background-color: #00669F;
+    color: #fff;
     margin-left: 100px;
     margin-right: 100px;
-    padding: 10px 25px;
+    padding: 10px;
     text-decoration: none;
+    text-align: center;
+    display: block;
 }
 
 .btn-articulo:hover{
     background-color: #36769b;
-}
-
-.btn-txt{
-    color: #fff;
-    font-size: 15px;
-    font-weight: lighter;
-    text-align: center;
 }
 
 
