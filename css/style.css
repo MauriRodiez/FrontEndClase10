@@ -14,7 +14,7 @@
 /* Header */
 
 .banner-top{
-    background-color: #1CD1B0;
+    background-color: #D1891C;
     height: 38px;
     width: 100%;
     position: relative;
@@ -38,6 +38,7 @@
 }
 
 .titulo-principal{
+    color: #fff;
     font-size: 40px;
     font-weight: lighter;
     padding: 25px 0;
@@ -47,14 +48,15 @@
 /* Main */
 
 .noticias{
-    margin: 150PX 50PX;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 150px auto;
 }
 
 .articulo-heroe{
     background-color: #F3F3F3;
     border-radius: 17px 17px 0 0;
     box-shadow: 0 3px 10px #666;
-    display: inline-block;
     height: 529px;
     margin: auto 10px;
     width: 300px;
@@ -66,8 +68,20 @@
     height: 194px;
 }
 
+.maskSuper{
+    background-image: url(../img/back_superman.png);
+    background-size: cover;
+    height: 194px;
+}
+
 .maskHarley{
     background-image: url(../img/back_harley.png);
+    background-size: cover;
+    height: 194px;
+}
+
+.maskMaravilla{
+    background-image: url(../img/back_MujerMaravilla.png);
     background-size: cover;
     height: 194px;
 }
@@ -80,10 +94,17 @@
 }
 
 .perfil-heroe{
+    border-radius: 70px;
     left: 90px;
+    height: 128px;
     position: relative;
     right: 90px;
     top: -75px;
+    width: 128px;
+}
+
+.perfil-heroe.tablet-mobile{
+    display: none;
 }
 
 .titulo-noticia{
@@ -104,9 +125,14 @@
 
 .btn-articulo{
     background-color: #00669F;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
     margin-left: 100px;
     margin-right: 100px;
-    padding: 10px 25px;
+    padding: 10px 5px;
     text-decoration: none;
 }
 
@@ -114,19 +140,29 @@
     background-color: #36769b;
 }
 
-.btn-txt{
-    color: #fff;
-    font-size: 15px;
-    font-weight: lighter;
-    text-align: center;
+.plus{
+    background-color: #00669F;
+    border-radius: 50px ;
+    height: 50px;
+    position: absolute;
+    top: 82vh;
+    right: 8px;
+    width: 50px;
 }
 
+.plus img{
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
 
 /* Footer */
 
 .pie{
+    align-items: center;
     background-color: #00669F;
     border: 0;
+    display: flex;
     height: 51px;
     position: relative;
     bottom: 0;
@@ -137,6 +173,49 @@
     color: #FFF9F9;
     font-size: 16px;
     font-weight: lighter;
-    padding: 18px 0;
-    padding-left: 50px;
+    margin: auto;
+}
+
+.logoGit{
+    height: 25px;
+    margin-right: 20px;
+    width: 120px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+    
+    .noticias{
+        flex-wrap: wrap;       
+    }
+
+    .articulo-heroe{
+        margin: 20px 0;
+    }
+
+    .perfil-heroe.tablet-mobile{
+        display: block;
+    }
+
+    .perfil-heroe.desktop{
+        display: none;
+    }
+
+}
+
+@media  screen and (max-width: 480px) {
+
+    .pie{
+        flex-direction: column;
+        height: 80px;
+    }
+    
+    .txt-final{
+        margin: 10px 0;
+    }
+
+    .logoGit{
+        width: 80px;
+    }
 }
