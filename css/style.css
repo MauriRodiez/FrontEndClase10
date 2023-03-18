@@ -55,7 +55,7 @@
 
 .articulo-heroe{
     background-color: #F3F3F3;
-    border-radius: 17px 17px 0 0;
+    border-radius: 20px 20px 0 0;
     box-shadow: 0 3px 10px #666;
     height: 529px;
     margin: auto 10px;
@@ -74,8 +74,9 @@
     height: 194px;
 }
 
+
 .maskHarley{
-    background-image: url(../img/back_harley.png);
+    background-image: url(../img/back_harleyTablet.png);
     background-size: cover;
     height: 194px;
 }
@@ -149,6 +150,21 @@
     text-align: center;
 }
 
+.plus{
+    background-color: #00669F;
+    border-radius: 55px;
+    height: 50px;
+    position: absolute;
+    right: 5px;
+    top: 95vh;
+    width: 50px;
+}
+
+.plus img{
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+}
 
 /* Footer */
 
