@@ -1,0 +1,35 @@
+@import "style.css";
+
+/* Header */
+
+.menu-nav{
+    background-color: #001D2D;
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+}
+
+.menu{
+    color: #fff;
+    display: flex;
+    font-size: 1rem;
+    list-style-type: none;
+    margin: 8px;
+}
+
+.menu li{
+    font-style: normal;
+    margin: 0 5px;
+}
+
+/* Main */
+
+.container-form{
+    align-items: center;
+    background-color: #00669F;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 80%;
+}
