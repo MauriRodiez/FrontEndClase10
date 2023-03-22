@@ -1,76 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/formulario.css" />
-    <title>Agregar sueper Heroe</title>
-  </head>
-  <body>
-    <section class="banner-top">
-      <p class="txt-banner">Descuentos 20%</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/formulario.css" />
+  <title>Agregar sueper Heroe</title>
+</head>
+
+<body>
+  <section class="banner-top">
+    <p class="txt-banner">20% de descuento en todos los productos!</p>
+  </section>
+  <header class="header-top">
+    <section class="logo-banner">
+      <img src="img/Logo.png" alt="Logo empresa">
+      <span class="nombre-empresa">Nombre Tienda</span>
     </section>
-    <header class="header-top">
-      <span><img src="img/Logo.png" alt="Logo empresa"> Nombre empresa</span>
-    </header>
     <section class="menu-nav">
       <nav>
         <ul class="menu">
-          <li>Contacto</li>
-          <li>Registrarme</li>
-          <li>Ingresar</li>
+          <li><a class="btn-menu" href="">Contacto</a></li>
+          <li><a class="btn-menu" href="">Registrarme</a></li>
+          <li><a class="btn-menu" href="">Ingresar</a></li>
         </ul>
       </nav>
     </section>
-    <main>
-        <section class="container-form">
-            <h1>Añadí tu super!</h1>
-            <h3>Agregá tu personaje favorito completando las opciones.</h3>
-            <form class="formulario">
-                <fieldset>
-                    <label for="nombre">* Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+  </header>
 
-                    <label for="especie">* Especie</label>
-                      <select name="especie" id="especie">
-                        <option value="especie">Especie</option>
-                        <option value="marvel">Marvel</option>
-                        <option value="liga">Liga de la justicia</option>
-                        <option value="guardianes">Guardianes de la galaxia</option>
-                        <option value="villanos">Villanos</option>
-                      </select>
-                </fieldset>
-                <fieldset>
-                  <label for="fecha">Fecha</label>
-                  <input type="date">
+  <main>
+    <section class="container-form">
+      <h2 class="titulo-form">Añadí tu super!</h2>
+      <h3 class="subtitulo-form">Agregá tu personaje favorito completando las opciones.</h3>
+      <form class="formulario" action="" method="post">
+        <fieldset class="columnaUno">
+          
+          <label for="nombre">* Nombre:</label>
+          <input class="box-nombre" type="text" id="nombre" name="nombre" required>
 
-                  <label for="archivo">Agregar Foto</label>
-                  <input type="file">
-                </fieldset>
-                <fieldset>
-                  <textarea name="descripcion" id="msj" cols="30" rows="10" placeholder="Descripcion"></textarea>
-                  <label for="poderes">Poderes
-                    <input type="checkbox"> Volar
-                    <input type="checkbox"> Superinteligencia
-                    <input type="checkbox"> Vista de rayos laser
-                    <input type="checkbox"> Billetera gorda
-                  </label>
-                  
-                  <hr>
+          <label for="fecha">Fecha</label>
+          <input class="box-date" type="date">
 
-                  <label for="tipo">Tipo de personaje
-                    <input type="radio"> Heroe / Heroina
-                    <input type="radio">Villano / Villana
-                  </label>
-                </fieldset>
-                <input type="submit" value="Añadir">
-            </form>
-        </section>
-    </main>
-    <footer class="pie">
-      <p class="txt-final">Todos los derechos reservados a FRONT END 1</p>
-      <img class="logoGit" src="img/logoGit.png" alt="Logotipo de github" />
-    </footer>
-  </body>
+          <textarea class="txt-area" name="descripcion" id="msj" cols="30" rows="10" placeholder="Descripcion"></textarea>
+
+        </fieldset>
+
+        <fieldset class="columnaDos">
+          <label for="especie">* Especie</label>
+          <select class="combo-box" name="especie" id="especie">
+            <option value="especie">Especie</option>
+            <option value="marvel">Marvel</option>
+            <option value="liga">Liga de la justicia</option>
+            <option value="guardianes">Guardianes de la galaxia</option>
+            <option value="villanos">Villanos</option>
+          </select>
+
+          <label for="archivo">Agregar Foto</label>
+          <input class="archivo" type="file" name="foto">
+
+          <label for="poderes">Poderes</label>
+          <label for="poderes">
+            <input type="checkbox" name="power" value="Volar">Volar
+          </label>
+          <label for="poderes">
+            <input type="checkbox" name="power" value="Superinteligencia">Superinteligencia
+          </label>
+          <label for="poderes">
+            <input type="checkbox" name="power" value="vista">Vista de rayos laser
+          </label>
+          <label for="poderes">
+            <input type="checkbox" name="power" value="billetera">Billetera gorda
+          </label>
+           
+          <hr>
+
+          <label for="tipo">Tipo de personaje</label>
+          <label for="heroe">
+            <input type="radio" name="heroes"> Heroe / Heroina
+          </label>
+          <label for="heroe">            
+            <input type="radio" name="heroes">Villano / Villana
+          </label>
+        </fieldset>
+      </form>
+      <input type="submit" value="Añadir">
+    </section>
+  </main>
+  <footer class="pie">
+    <p class="txt-final">Todos los derechos reservados a FRONT END 1</p>
+    <img class="logoGit" src="img/logoGit.png" alt="Logotipo de github" />
+  </footer>
+</body>
+
 </html>

@@ -28,8 +28,10 @@
 }
 
 .header-top{
+    align-items: center;
     background-color: #00669F;
     box-shadow: 0 3px 15px #000;
+    display: flex;
     position: sticky;
     height: 101px;
     width: 100%;
