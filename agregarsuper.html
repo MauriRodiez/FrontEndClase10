@@ -12,7 +12,7 @@
       <p class="txt-banner">Descuentos 20%</p>
     </section>
     <header class="header-top">
-      <h1 class="titulo-principal">Card Super Heroes</h1>
+      <span><img src="img/Logo.png" alt="Logo empresa"> Nombre empresa</span>
     </header>
     <section class="menu-nav">
       <nav>
@@ -32,8 +32,39 @@
                     <label for="nombre">* Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
 
+                    <label for="especie">* Especie</label>
+                      <select name="especie" id="especie">
+                        <option value="especie">Especie</option>
+                        <option value="marvel">Marvel</option>
+                        <option value="liga">Liga de la justicia</option>
+                        <option value="guardianes">Guardianes de la galaxia</option>
+                        <option value="villanos">Villanos</option>
+                      </select>
                 </fieldset>
-                <div></div>
+                <fieldset>
+                  <label for="fecha">Fecha</label>
+                  <input type="date">
+
+                  <label for="archivo">Agregar Foto</label>
+                  <input type="file">
+                </fieldset>
+                <fieldset>
+                  <textarea name="descripcion" id="msj" cols="30" rows="10" placeholder="Descripcion"></textarea>
+                  <label for="poderes">Poderes
+                    <input type="checkbox"> Volar
+                    <input type="checkbox"> Superinteligencia
+                    <input type="checkbox"> Vista de rayos laser
+                    <input type="checkbox"> Billetera gorda
+                  </label>
+                  
+                  <hr>
+
+                  <label for="tipo">Tipo de personaje
+                    <input type="radio"> Heroe / Heroina
+                    <input type="radio">Villano / Villana
+                  </label>
+                </fieldset>
+                <input type="submit" value="Añadir">
             </form>
         </section>
     </main>
