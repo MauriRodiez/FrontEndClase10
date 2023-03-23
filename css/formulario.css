@@ -127,7 +127,7 @@ label{
     background: #FFFFFF;
     border: 1.53407px solid rgba(0, 0, 0, 0.1);
     border-radius: 15.3407px;
-    height: 307px;
+    height: 313px;
     padding: 5px;
 }
 
@@ -139,8 +139,49 @@ label{
     padding: 5px;
 }
 
-.archivo{
-    background: #CECECE;
+input[type="file"]{
     border-radius: 5px;
     height: 32px;
+    margin: 18px auto 12px;
+}
+
+.txt-check{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+input[type="checkbox"]{
+    height: 20px;
+    width: 24px;
+}
+
+.box-check{
+    margin-right: 6px;
+}
+
+.txt-radio{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+input[type="radio"]{
+    height: 20px;
+    width: 24px;
+}
+
+.box-radio{
+    margin-right: 6px;
+}
+
+.btn-add{
+    background: #1CD1B0;
+    border: 0;
+    border-radius: 23.011px;
+    font-weight: 700;
+    font-size: 40px;
+    height: 87px;
+    line-height: 44px;
+    width: 466px;
 }
