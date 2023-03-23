@@ -1,5 +1,14 @@
 @import "style.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
 /* Header */
 
 .banner-top{
@@ -67,11 +76,15 @@
 .titulo-form{
     color: #fff;
     font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .subtitulo-form{
     color: #fff;
     font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .formulario{
@@ -82,6 +95,8 @@
     width: 100%;
 }
 
+/* Columna uno - form */
+
 .columnaUno{
     border: 0;
     display: flex;
@@ -91,13 +106,9 @@
     width: 100%;
 }
 
-.columnaDos{
-    border: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 5px;
-    width: 100%;
+.lbl-name::before{
+    content: "*";
+    padding: 0 5px;
 }
 
 label{
@@ -111,38 +122,80 @@ label{
     background: #FFFFFF;
     border: 1.53407px solid rgba(0, 0, 0, 0.1);
     border-radius: 15.3407px;
+    font-size: 1rem;
     height: 63px;
-    padding: 5px;
+    padding: 15px;
+}
+.box-nombre:focus{
+    background-color: #AFF9FE;
+}
+
+.box-nombre:valid{
+    border: #15d61f solid 2px;
+}
+
+.box-nombre:invalid{
+    border: 2px solid red;
 }
 
 .box-date{
     background: #FFFFFF;
     border: 1.53407px solid rgba(0, 0, 0, 0.1);
     border-radius: 15.3407px;
+    font-size: 1rem;
     height: 63px;
-    padding: 5px;
+    padding: 15px;
+}
+
+.box-date:invalid{
+    border: 2px solid red;
+}
+
+.box-date:valid{
+    border: #15d61f solid 2px;
 }
 
 .txt-area{
     background: #FFFFFF;
     border: 1.53407px solid rgba(0, 0, 0, 0.1);
     border-radius: 15.3407px;
+    font-size: 1rem;
     height: 313px;
-    padding: 5px;
+    padding: 15px;
 }
 
+.txt-area:focus{
+    background-color: #AFF9FE;
+}
+
+/* Columna 2 Form */
+
+.columnaDos{
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+    width: 100%;
+}
+
+.lbl-especie::before{
+    content: "*";
+    padding: 0 5px;
+}
 .combo-box{
     background: #FFFFFF;
     border: 1.53407px solid rgba(0, 0, 0, 0.1);
     border-radius: 15.3407px;
+    font-size: 1rem;
     height: 63px;
-    padding: 5px;
+    padding: 15px;
 }
 
 input[type="file"]{
     border-radius: 5px;
     height: 32px;
-    margin: 18px auto 12px;
+    margin: 18px 0 12px;
 }
 
 .txt-check{
@@ -179,9 +232,10 @@ input[type="radio"]{
     background: #1CD1B0;
     border: 0;
     border-radius: 23.011px;
-    font-weight: 700;
     font-size: 40px;
+    font-weight: 700;
     height: 87px;
     line-height: 44px;
+    margin-top: 20px;
     width: 466px;
 }

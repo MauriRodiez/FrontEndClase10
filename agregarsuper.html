@@ -15,7 +15,7 @@
   </section>
   <header class="header-top">
     <section class="logo-banner">
-      <img src="img/Logo.png" alt="Logo empresa">
+      <a href="index.html"><img src="img/Logo.png" alt="Logo empresa"></a>
       <span class="nombre-empresa">Nombre Tienda</span>
     </section>
     <section class="menu-nav">
@@ -36,18 +36,18 @@
       <form class="formulario" action="" method="post">
         <fieldset class="columnaUno">
           
-          <label for="nombre">* Nombre:</label>
-          <input class="box-nombre" type="text" id="nombre" name="nombre" required>
+          <label for="nombre" class="lbl-name">Nombre:</label>
+          <input class="box-nombre" type="text" id="nombre" name="nombre" pattern="a-z" minlength="4" maxlength="30" required>
 
           <label for="fecha">Fecha</label>
-          <input class="box-date" type="date">
+          <input class="box-date" id="fecha" type="date" min="2023/01/01" max="2023/12/31">
 
           <textarea class="txt-area" name="descripcion" id="msj" cols="30" rows="10" placeholder="Descripcion"></textarea>
 
         </fieldset>
 
         <fieldset class="columnaDos">
-          <label for="especie">* Especie</label>
+          <label for="especie" class="lbl-especie">Especie</label>
           <select class="combo-box" name="especie" id="especie">
             <option value="especie">Especie</option>
             <option value="marvel">Marvel</option>

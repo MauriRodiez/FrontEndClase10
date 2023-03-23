@@ -162,6 +162,10 @@
     width: 50px;
 }
 
+.plus:hover{
+    background-color: #001D2D;
+}
+
 .plus img{
     height: 40px;
     margin: 5px;
