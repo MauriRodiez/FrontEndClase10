@@ -37,10 +37,10 @@
         <fieldset class="columnaUno">
           
           <label for="nombre" class="lbl-name">Nombre:</label>
-          <input class="box-nombre" type="text" id="nombre" name="nombre" pattern="a-z" minlength="4" maxlength="30" required>
+          <input class="box-nombre" type="text" id="nombre" name="nombre" minlength="4" maxlength="30" required>
 
           <label for="fecha">Fecha</label>
-          <input class="box-date" id="fecha" type="date" min="2023/01/01" max="2023/12/31">
+          <input class="box-date" id="fecha" type="date" min="2023-01-01" max="2023-12-31">
 
           <textarea class="txt-area" name="descripcion" id="msj" cols="30" rows="10" placeholder="Descripcion"></textarea>
 
@@ -53,11 +53,11 @@
             <option value="marvel">Marvel</option>
             <option value="liga">Liga de la justicia</option>
             <option value="guardianes">Guardianes de la galaxia</option>
-            <option value="villanos">Villanos</option>
+            <option value="villanos" disabled>Villanos</option>
           </select>
 
           <label for="archivo">Agregar Foto</label>
-          <input type="file" name="foto">
+          <input type="file" name="foto" multiple accept=".pdf, .jpg, .png">
 
           <label for="poderes">Poderes</label>
           <label for="poderes" class="txt-check">
@@ -77,7 +77,7 @@
 
           <label for="tipo">Tipo de personaje</label>
           <label for="heroe" class="txt-radio">
-            <input class="box-radio" type="radio" name="heroes"> Heroe / Heroina
+            <input class="box-radio" type="radio" name="heroes" checked> Heroe / Heroina
           </label>
           <label for="heroe" class="txt-radio">            
             <input class="box-radio" type="radio" name="heroes">Villano / Villana

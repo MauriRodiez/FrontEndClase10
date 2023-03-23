@@ -59,6 +59,10 @@
     text-decoration: none;
 }
 
+.btn-menu:hover{
+    color: #15d61f;
+}
+
 
 /* Main */
 
@@ -168,6 +172,10 @@ label{
     background-color: #AFF9FE;
 }
 
+.txt-area:valid{
+    border: #15d61f solid 2px;
+}
+
 /* Columna 2 Form */
 
 .columnaDos{
@@ -192,10 +200,29 @@ label{
     padding: 15px;
 }
 
+.combo-box:first-child{
+    font-size: 1rem;
+    padding: 5px;
+}
+
+option:nth-child(2n+1){
+    background-color:#1CD1B0;
+}
+
+option:nth-child(2n){
+    background-color: #AFF9FE;
+}
+
+.combo-box:valid{
+    border: #15d61f solid 2px;
+}
+
 input[type="file"]{
     border-radius: 5px;
+    color: #333;
+    font-size: 1rem;
     height: 32px;
-    margin: 18px 0 12px;
+    margin: 18px 0 12px;;
 }
 
 .txt-check{
@@ -213,6 +240,9 @@ input[type="checkbox"]{
     margin-right: 6px;
 }
 
+.box-check:checked{
+    accent-color: #15d61f;
+}
 .txt-radio{
     color: #fff;
     font-size: 1rem;
@@ -228,6 +258,10 @@ input[type="radio"]{
     margin-right: 6px;
 }
 
+.box-radio:checked{
+    accent-color: #15d61f;
+}
+
 .btn-add{
     background: #1CD1B0;
     border: 0;
@@ -238,4 +272,9 @@ input[type="radio"]{
     line-height: 44px;
     margin-top: 20px;
     width: 466px;
+}
+
+.btn-add:hover{
+    background-color: #001D2D;
+    color: #fff;
 }
