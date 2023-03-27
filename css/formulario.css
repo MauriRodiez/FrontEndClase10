@@ -232,18 +232,41 @@ input[type="file"]{
     font-weight: lighter;
 }
 
-input[type="checkbox"]{
+/*input[type="checkbox"]{
     height: 20px;
     width: 24px;
-}
+}*/
 
 .box-check{
+    appearance: none;
+    background-color: #fff;
+    border: #00fdf1 solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 20px;
     margin-right: 6px;
+    width: 24px;
+}
+/*
+.box-check:checked{
+    accent-color: #15d61f;
+}*/
+
+.box-check:checked::after{
+    content: "✓";    
+    color: #00669F;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1rem;
+    padding: 3px;
 }
 
 .box-check:checked{
-    accent-color: #15d61f;
+    content: \1F5F8;
 }
+
+
+
 .txt-radio{
     color: #fff;
     font-size: 1rem;
@@ -267,6 +290,7 @@ input[type="radio"]{
     background: #1CD1B0;
     border: 0;
     border-radius: 23.011px;
+    cursor: pointer;
     font-size: 40px;
     font-weight: 700;
     height: 87px;

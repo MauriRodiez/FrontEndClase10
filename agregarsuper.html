@@ -1,96 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/formulario.css" />
+    <title>Agregar super Heroe</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/formulario.css" />
-  <title>Agregar super Heroe</title>
-</head>
-
-<body>
-  <section class="banner-top">
-    <p class="txt-banner">20% de descuento en todos los productos!</p>
-  </section>
-  <header class="header-top">
-    <section class="logo-banner">
-      <a href="index.html"><img src="img/Logo.png" alt="Logo empresa"></a>
-      <span class="nombre-empresa">Nombre Tienda</span>
+  <body>
+    <section class="banner-top">
+      <p class="txt-banner">20% de descuento en todos los productos!</p>
     </section>
-    <section class="menu-nav">
-      <nav>
-        <ul class="menu">
-          <li><a class="btn-menu" href="">Contacto</a></li>
-          <li><a class="btn-menu" href="">Registrarme</a></li>
-          <li><a class="btn-menu" href="">Ingresar</a></li>
-        </ul>
-      </nav>
-    </section>
-  </header>
+    <header class="header-top">
+      <section class="logo-banner">
+        <a href="index.html"><img src="img/Logo.png" alt="Logo empresa" /></a>
+        <span class="nombre-empresa">Nombre Tienda</span>
+      </section>
+      <section class="menu-nav">
+        <nav>
+          <ul class="menu">
+            <li><a class="btn-menu" href="">Contacto</a></li>
+            <li><a class="btn-menu" href="">Registrarme</a></li>
+            <li><a class="btn-menu" href="">Ingresar</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
 
-  <main>
-    <section class="container-form">
-      <h2 class="titulo-form">Añadí tu super!</h2>
-      <h3 class="subtitulo-form">Agregá tu personaje favorito completando las opciones.</h3>
-      <form class="formulario" action="" method="post">
-        <fieldset class="columnaUno">
-          
-          <label for="nombre" class="lbl-name">Nombre:</label>
-          <input class="box-nombre" type="text" id="nombre" name="nombre" minlength="4" maxlength="30" required>
+    <main>
+      <section class="container-form">
+        <h2 class="titulo-form">Añadí tu super!</h2>
+        <h3 class="subtitulo-form">
+          Agregá tu personaje favorito completando las opciones.
+        </h3>
+        <form class="formulario" action="#" method="post">
+          <fieldset class="columnaUno">
+            <label for="nombre" class="lbl-name">Nombre:</label>
+            <input
+              class="box-nombre"
+              type="text"
+              id="nombre"
+              name="nombre"
+              minlength="4"
+              maxlength="30"
+              pattern="[A-Za-z]+"
+              oninvalid="setCustomValidity('el texto tebe tener solo caracteres alfabeticos')"
+              required
+            />
 
-          <label for="fecha">Fecha</label>
-          <input class="box-date" id="fecha" type="date" min="2023-01-01" max="2023-12-31">
+            <label for="fecha">Fecha</label>
+            <input
+              class="box-date"
+              id="fecha"
+              type="date"
+              min="2023-01-01"
+              max="2023-12-31"
+            />
 
-          <textarea class="txt-area" name="descripcion" id="msj" cols="30" rows="10" placeholder="Descripcion"></textarea>
+            <textarea
+              class="txt-area"
+              name="descripcion"
+              id="msj"
+              cols="30"
+              rows="10"
+              placeholder="Descripcion"
+            ></textarea>
+          </fieldset>
 
-        </fieldset>
+          <fieldset class="columnaDos">
+            <label for="especie" class="lbl-especie">Especie</label>
+            <select class="combo-box" name="especie" id="especie">
+              <option value="especie">Especie</option>
+              <option value="marvel">Marvel</option>
+              <option value="liga">Liga de la justicia</option>
+              <option value="guardianes">Guardianes de la galaxia</option>
+              <option value="villanos" disabled>Villanos</option>
+            </select>
 
-        <fieldset class="columnaDos">
-          <label for="especie" class="lbl-especie">Especie</label>
-          <select class="combo-box" name="especie" id="especie">
-            <option value="especie">Especie</option>
-            <option value="marvel">Marvel</option>
-            <option value="liga">Liga de la justicia</option>
-            <option value="guardianes">Guardianes de la galaxia</option>
-            <option value="villanos" disabled>Villanos</option>
-          </select>
+            <label for="archivo">Agregar Foto</label>
+            <input type="file" name="foto" multiple accept=".pdf, .jpg, .png" />
 
-          <label for="archivo">Agregar Foto</label>
-          <input type="file" name="foto" multiple accept=".pdf, .jpg, .png">
+            <label for="Tit-poderes">Poderes</label>
+            <label for="poderes" class="txt-check">
+              <input
+                id="poderes"
+                class="box-check"
+                type="checkbox"
+                name="power"
+                value="Volar"
+                checked
+              />Volar
+            </label>
+            <label for="poderes1" class="txt-check">
+              <input
+                id="poderes1"
+                class="box-check"
+                type="checkbox"
+                name="power"
+                value="Superinteligencia"
+                checked
+              />Superinteligencia
+            </label>
+            <label for="poderes2" class="txt-check">
+              <input
+                id="poderes2"
+                class="box-check"
+                type="checkbox"
+                name="power"
+                value="vista"
+                checked
+              />Vista de rayos laser
+            </label>
+            <label for="poderes3" class="txt-check">
+              <input
+              id="poderes3"
+                class="box-check"
+                type="checkbox"
+                name="power"
+                value="billetera"
+                checked
+              />Billetera gorda
+            </label>
 
-          <label for="poderes">Poderes</label>
-          <label for="poderes" class="txt-check">
-            <input class="box-check" type="checkbox" name="power" value="Volar">Volar
-          </label>
-          <label for="poderes" class="txt-check">
-            <input class="box-check" type="checkbox" name="power" value="Superinteligencia">Superinteligencia
-          </label>
-          <label for="poderes" class="txt-check">
-            <input class="box-check" type="checkbox" name="power" value="vista">Vista de rayos laser
-          </label>
-          <label for="poderes" class="txt-check">
-            <input class="box-check" type="checkbox" name="power" value="billetera">Billetera gorda
-          </label>
-           
-          <hr>
+            <hr />
 
-          <label for="tipo">Tipo de personaje</label>
-          <label for="heroe" class="txt-radio">
-            <input class="box-radio" type="radio" name="heroes" checked> Heroe / Heroina
-          </label>
-          <label for="heroe" class="txt-radio">            
-            <input class="box-radio" type="radio" name="heroes">Villano / Villana
-          </label>
-        </fieldset>
-      </form>
-      <input class="btn-add" type="submit" value="Añadir">
-    </section>
-  </main> 
-  <footer class="pie">
-    <p class="txt-final">Todos los derechos reservados a FRONT END 1</p>
-    <img class="logoGit" src="img/logoGit.png" alt="Logotipo de github" />
-  </footer>
-</body>
-
+            <label for="tipo">Tipo de personaje</label>
+            <label for="heroe" class="txt-radio">
+              <input class="box-radio" type="radio" name="heroes" checked />
+              Heroe / Heroina
+            </label>
+            <label for="heroe" class="txt-radio">
+              <input class="box-radio" type="radio" name="heroes" />Villano /
+              Villana
+            </label>
+          </fieldset>
+        </form>
+        <input class="btn-add" type="submit" value="Añadir" />
+      </section>
+    </main>
+    <footer class="pie">
+      <p class="txt-final">Todos los derechos reservados a FRONT END 1</p>
+      <img class="logoGit" src="img/logoGit.png" alt="Logotipo de github" />
+    </footer>
+  </body>
 </html>
